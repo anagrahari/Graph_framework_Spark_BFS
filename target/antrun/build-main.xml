@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>Copying service configuration file</echo>
+  <copy file="service.properties" tofile="C:\Users\ANKIT\workspace_spark\Sample/target/service.properties" overwrite="true"/>
+  <echo>Copying test-sets folder</echo>
+  <copy todir="C:\Users\ANKIT\workspace_spark\Sample/target/test-sets" overwrite="true">
+    <fileset dir="test-sets"/>
+  </copy>
+</target>
+</project>
